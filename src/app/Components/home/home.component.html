@@ -1,0 +1,57 @@
+<div class="containerHome">
+    <section id="home">
+        <img 
+            src="../../../assets/logo.png" 
+            alt="LogoHome" 
+            class="logoHome"
+            data-aos="fade-up" 
+            data-aos-offset="200" 
+            data-aos-easing="ease-in-sine" 
+            data-aos-duration="1000"
+        >
+        <h2>Lo Nuevo</h2>
+        <img 
+            src="../../../assets/modelos/1.png" 
+            alt="Modelos1" 
+            class="modelos1"
+            data-aos="fade-right" 
+            data-aos-offset="200" 
+            data-aos-easing="ease-in-sine" 
+            data-aos-duration="3000"
+        >
+        <img 
+            src="../../../assets/modelos/2.png" 
+            alt="Modelos2" 
+            class="modelos2"
+            data-aos="fade-left" 
+            data-aos-offset="200" 
+            data-aos-easing="ease-in-sine" 
+            data-aos-duration="3000"
+            data-aos-delay="500"
+        >
+        <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" class="wave1">
+            <path fill="#0099ff" fill-opacity="1" d="M0,256L1440,224L1440,320L0,320Z"></path>
+        </svg>  -->
+    </section>
+
+    <section class="features">
+        <h2
+            data-aos="fade-right" 
+            data-aos-offset="200" 
+            data-aos-easing="ease-in-sine" 
+            data-aos-duration="1000"       
+        >Procesos de Calidad</h2>
+            <div class="containerFeatures" 
+            data-aos="fade-left" 
+            data-aos-offset="200" 
+            data-aos-easing="ease-in-sine" 
+            data-aos-duration="1000"
+        >
+            <div class="feature" *ngFor="let feature of Features;let index=i;">
+                <img [src]="feature.url" alt="Feature">
+                <h3>{{feature.feature}}</h3>           
+            </div>
+        </div>
+    </section>
+    
+</div>

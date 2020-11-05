@@ -1,0 +1,39 @@
+<div class="menuContainer">
+    <div class="logoContainer">
+        <img src="../../../assets/logo.png" alt="LogoASES">
+    </div>
+    <div class="menu">
+       <ul *ngFor="let option of menuOptions; let i = index;">
+            <li *ngIf=" i != 2 ">
+                <a routerLink=option.link>               
+                    <span class="material-icons">
+                    {{option.icon}}
+                    </span>
+                    {{option.option}}
+                </a>
+            </li>
+            <li *ngIf=" i == 2 ">
+                <a [matMenuTriggerFor]="subMenu">               
+                    <span class="material-icons">
+                    {{option.icon}}
+                    </span>
+                    {{option.option}}
+                    <span class="material-icons">
+                        keyboard_arrow_down
+                    </span>
+                </a>
+            </li>              
+        </ul>
+        
+        <mat-menu #subMenu="matMenu" class="subMenu">
+            <a href="#" mat-menu-item>Diseños Salvadoreños</a>
+            <a href="#" mat-menu-item>Cumpleaños</a>
+            <a href="#" mat-menu-item>Deportivos</a>
+            <a href="#" mat-menu-item>Tazas</a>
+            <a href="#" mat-menu-item>Cristianos</a>
+            <a href="#" mat-menu-item>Hombre</a>
+            <a href="#" mat-menu-item>Mujer</a>
+            <a href="#" mat-menu-item>Niño</a>
+        </mat-menu>
+    </div>
+</div>

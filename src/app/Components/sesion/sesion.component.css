@@ -1,0 +1,26 @@
+.containerSesion{
+    width:100%;
+    display:flex;
+    flex-flow: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #000;
+}
+
+.languagesBox{
+    border-radius:50%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding:10px;
+}
+.languagesBox img{
+    border-radius:50%;
+    width:30px;
+    height:30px;
+}
+.optionsBox{
+    width:15%;
+    display:flex;
+    justify-content: space-around;
+}

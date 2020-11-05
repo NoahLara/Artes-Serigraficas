@@ -1,1 +1,38 @@
-/* You can add global styles to this file, and also import other style files */
+
+
+@import "~aos/dist/aos.css";
+
+
+@font-face{
+    src:url(./assets/fonts/BungeeShade-Regular.ttf);
+    font-family:"Shade";
+}
+@font-face{
+    src:url(./assets/fonts/Poppins-Regular.ttf);
+    font-family: "Poppins";
+}
+@font-face{
+    src:url(./assets/fonts/FasterOne-Regular.ttf);
+    font-family: "Faster";
+}
+@font-face{
+    src:url(./assets/fonts/VastShadow-Regular.ttf);
+    font-family: "Shadow";
+}
+
+
+body { 
+    margin: 0;
+    padding:0; 
+}
+*{
+    font-family: "Poppins"; 
+}
+
+
+
+.mat-tooltip{
+    font-size:15px;
+    text-align:center;
+    background-color:#23B5D3;
+}
